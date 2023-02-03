@@ -35,7 +35,7 @@ const getCategories = async () => {
       //console.log("Error getting documents", err);
     });
 };
-
+// Salut! am mai apucat pe site sa
 async function cats_maps ()  {
   await getCategories();
   $(".categories").html("");
