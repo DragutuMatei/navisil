@@ -13,6 +13,7 @@
 <!-- firebase -->
 <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,7 +47,7 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">Sign in</button>
+                            <button class="dropdown-item" id="signin" type="button">Sign in</button>
                             <button class="dropdown-item" type="button">Sign up</button>
                         </div>
                     </div>
@@ -100,7 +101,7 @@
             </div>
             <div class="col-lg-4 col-6 text-right">
                 <p class="m-0">Customer Service</p>
-                <h5 class="m-0">+012 345 6789</h5>
+                <h5 class="m-0" id="idk">+012 345 6789</h5>
             </div>
         </div>
     </div>
@@ -317,7 +318,7 @@
 
             <!-- Shop Product Start -->
             <div class="col-lg-9 col-md-8">
-                <div class="row pb-3">
+                <div class="row pb-3 products">
                     <div class="col-12 pb-1">
                         <div class="d-flex align-items-center justify-content-between mb-4">
                             <div>
@@ -694,7 +695,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/home.js"></script>
+    <script type="module" src="js/shop.js"></script>
 </body>
 
 </html>
